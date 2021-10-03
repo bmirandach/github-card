@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::selection{
+  @apply bg-indigo-100;
+}
+
+.bg-color {
+  background-image: linear-gradient(to right top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);
+}
+
+.body {
+  @apply bg-color bg-no-repeat bg-fixed text-brown font-roboto flex justify-center;
+}
+
+.container {
+  @apply flex flex-col justify-center w-full max-w-sm p-6 sm:w-9/12 sm:max-w-none lg:pt-10 lg:max-w-screen-md;
+}
+
+.form {
+  @apply flex mb-4 text-sm font-semibold;
+}
+
+.form-input {
+  @apply bg-search bg-left bg-no-repeat flex-grow focus:border-yellow-600 focus:ring-1 focus:ring-indigo-200 focus:outline-none text-sm text-light-brown font-medium border border-stats rounded-md py-2 pl-8;
+}
+
+.form-button {
+  @apply flex items-center justify-center rounded-md bg-btn hover:bg-btn-hover text-white px-3;
+}
+
+.results {
+  @apply bg-card rounded-md text-center shadow-card overflow-hidden;
+}
+
+.results-error {
+  @apply font-medium text-center text-red-700 p-3 lg:bg-red-100;
+}
+
+.results-load {
+  @apply font-medium text-center text-gray-600 p-3 hover:bg-stats lg:bg-yellow-100;
+}
+
+.results-found {
+  @apply  p-3 lg:p-10 lg:flex;
+}
+
+.user-picture {
+  @apply relative lg:flex-none;
+}
+
+.user-picture__border {
+  @apply w-24 h-24 absolute inset-0 rounded-full mx-auto lg:mx-0 bg-transparent animate-spin; 
+  box-shadow:  2px 0 0 rgb(252 227 138 / 25%), 0 -2px 0 0 rgb(255 202 125 / 25%), 2px 0 0 0 rgb(225 176 120 / 25%), -2px 0 0 0 rgb(254 152 122 / 25%), 2px -2px 0 0 rgb(243 129 129 / 50%), -2px 2px 0 0 rgb(255 202 125 / 50%), 2px 2px 0 0 rgb(254 152 122  / 75%), -2px -2px 0 0 rgb(255 202 125 / 75%);
+}
+
+.user-picture__img {
+   @apply w-24 h-24 rounded-full mx-auto lg:mx-0 lg:mr-9;
+}
+
+.user-info {
+  @apply lg:flex-grow;
+}
+
+.user-info__name {
+  @apply text-2xl font-bold pt-4 lg:pt-0;
+}
+
+.user-info__login {
+  @apply italic;
+}
+
+.user-info__bio {
+  @apply py-2;
+}
+
+.user-info__register {
+  @apply text-sm text-light-brown;
+}
+
+.user-info__stats {
+  @apply flex justify-around rounded-md bg-stats p-2 mt-4;
+}
+
+.user-info__title {
+  @apply font-semibold;
+}
+
+.user-info__contact {
+  @apply grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 px-2 pt-4;
+}
+
+.user-info__item {
+  @apply flex items-center;
+}
