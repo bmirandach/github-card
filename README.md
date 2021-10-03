@@ -13,7 +13,7 @@ This was made with the intention to continue practicing web development, this is
 
 ## Usage
 
-- Go to the following page []()
+- Go to the following page [https://github-card-bmirandach.vercel.app/](https://github-card-bmirandach.vercel.app/)
 - Enter the github username that you want to see in the card and press the Search button (a message will appear while loading the info). If the username wasn't found an error message will be displayed
 - You can go to the github profile page if you press the username in the card (this will be open in a new tab). If they are available you can do the same for the link and twitter from the contact list
 
